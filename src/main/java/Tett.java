@@ -2,6 +2,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+/*
+тестовый для определения правильности ссылок
+ */
 
 public class Tett {
     public static void main(String[] args) throws IOException {

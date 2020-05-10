@@ -9,9 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
+/*
+Парсинг всех главных ссылок с сайта
+ */
 
 public class LinkParser {
-    private static List<String> urls = new ArrayList<>();
+    private static List<String> urls = new ArrayList<>(); //Список полученных ссылок
     public List<String> getUrls() {
         return urls;
     }
@@ -28,29 +31,6 @@ public class LinkParser {
             for (Element element: links){
                 urls.add(element.attr("href").toString());
             }
-//            Pattern pattern = Pattern.compile("((/tovary-pervoj-neobhodimosti/)|" +
-//                    "(/instrument/)|" +
-//                    "(/ruchnoy_instrument/)|" +
-//                    "(/sadovaya_tehnika/)|" +
-//                    "(/silovaya_tehnika/)|" +
-//                    "(/stanki/)|" +
-//                    "(/avtogarazhnoe_oborudovanie/)|" +
-//                    "(/santehnika/)|" +
-//                    "(/krepezh/)|" +
-//                    "(/rashodnie_materialy/)|" +
-//                    "(/electrika_i_svet/)|" +
-//                    "(/klimat/)|" +
-//                    "(/otdyh-i-sport/)|" +
-//                    "(/stroitelnaya_tehnika_i_oborudovanie/)|" +
-//                    "(/uborka/)|" +
-//                    "(/spetsodezhda/)|" +
-//                    "(/bezopasnost/))+\\w");
-//           for (int i =0; i<urls.size(); i++){
-//               Matcher matcher = pattern.matcher(urls.get(i));
-//               if (matcher.find()){
-//                   urls2.add(urls.get(i));
-//               }
-//          }
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,41 +46,9 @@ public class LinkParser {
                 e.printStackTrace();
             }
             urls2.addAll(urls);
-//            File urlBefore = new File("UrlBefore.txt");
-//            File urlAfter = new File("UrlAfter.txt");
-//            FileWriter writerBefore = new FileWriter(urlBefore);
-//            FileWriter writerAfter = new FileWriter(urlAfter);
+
             urls.clear();
             urls.addAll(urls2);
-
-//            for (String s: urls){
-//                writerBefore.write(s);
-//                writerBefore.write("\n");
-//            }
-//            writerBefore.close();
-
-
-//            for (int i = 0; i<urls.size(); i++) {
-//                    if ((i + 1) < urls.size() && urls.get(i + 1).contains(urls.get(i))) {
-//                        urls.remove(urls.get(i));
-//                    }
-//            }
-
         }
-//            for (int i = 0; i<urls.size(); i++) {
-//
-//                if ((i + 1) < urls.size() && urls.get(i + 1).contains(urls.get(i))) {
-//                    urls.remove(urls.get(i));
-//                }
-//
-//            }
-//public static void main(String[] args) {
-//    for (String s: urls){
-//        System.out.println(s);
-//    }
-//}
-
-//            writerAfter.close();
-
 
 }

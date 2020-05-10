@@ -23,7 +23,7 @@ public class InstrumentParser extends Thread {
         this.url = url;
     }
 
-    public synchronized void search(String URL) {
+    public  void search(String URL) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Stakyy\\Desktop\\chromedriver.exe");
         HashMap<String, Object> images = new HashMap<String, Object>();
         images.put("images", 2);

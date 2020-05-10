@@ -1,5 +1,8 @@
 import java.util.Set;
 import java.util.TreeSet;
+/*
+Вычленение необходимых ссылок и распределение по категориям
+ */
 
 public class GetItems {
     private static final LinkParser linkParser = new LinkParser();
@@ -64,65 +67,7 @@ public class GetItems {
 
 
 
-//    static List<String> getEssentialGoods() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/tovary-pervoj-neobhodimosti/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
-//
-//    private static List<String> getInstrument() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/instrument/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
-//
-//    private static List<String> getRuchnoyInstr() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/ruchnoy_instrument/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
-//
-//    public static List<String> getSadTech() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/sadovaya_tehnika/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
-//    public static List<String> getSilovayaTech() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/silovaya_tehnika/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
-//    public static List<String> getStanki() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/stanki/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
-//    public static List<String> getAutoGarageItems() {
-//        List<String> list = new ArrayList<>();
-//        for (String s : linkParser.getUrls()) {
-//            if (s.contains("/avtogarazhnoe_oborudovanie/"))
-//                list.add(s);
-//        }
-//        return list;
-//    }
+
 
 
 

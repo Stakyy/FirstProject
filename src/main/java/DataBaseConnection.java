@@ -4,15 +4,6 @@ import java.sql.*;
 import java.util.List;
 
 public class DataBaseConnection {
-//    public static void main(String[] args) {
-//        DataBaseConnection database = new DataBaseConnection();
-//        database.openConnection();
-//      //  database.insertNewInstr();
-//        database.select();
-//        database.closeConnection();
-//
-//
-//    }
 
    static Connection conn;
 
@@ -55,13 +46,7 @@ public class DataBaseConnection {
 
         }
         }
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter codeToOrder");
-//        int orderCode = Integer.parseInt(scanner.nextLine());
-//        System.out.println("Enter name");
-//        String name = scanner.nextLine();
-//        System.out.println("Enter price");
-//        double price = Double.parseDouble(scanner.nextLine());
+
 
 
 
